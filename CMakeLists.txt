@@ -33,7 +33,7 @@ LIST(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake_modules)
 #KMS_230911
 find_package(OpenCV 4.2 QUIET)
 if(NOT OpenCV_FOUND)
-   find_package(OpenCV 3.4.2 QUIET)
+   find_package(OpenCV 3.4 QUIET)
    if(NOT OpenCV_FOUND)
       message(FATAL_ERROR "OpenCV > 2.4.3 not found.")
    endif()
